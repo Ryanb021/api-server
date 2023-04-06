@@ -24,7 +24,7 @@ describe('server', () => {
 
     expect(response.status).toEqual(200);
     expect(response.body.name).toEqual('Tank Top');
-    expect(response.body.description).toEqual('Muscle Man');
+    expect(response.body.brand).toEqual('Muscle Man');
     expect(response.body.price).toEqual(5000);
     expect(response.body.id).toBeTruthy();
   });
@@ -33,7 +33,7 @@ describe('server', () => {
     const response = await request.get('/clothes');
     expect(response.status).toEqual(200);
     expect(response.body[0].name).toEqual('Tank Top');
-    expect(response.body[0].description).toEqual('Muscle Man');
+    expect(response.body[0].brand).toEqual('Muscle Man');
     expect(response.body[0].price).toEqual(5000);
     expect(response.body[0].id).toBeTruthy();
   });

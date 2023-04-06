@@ -1,9 +1,8 @@
 'use strict';
 
-const { describe } = require('yargs');
+
 const { app } = require('../src/server');
 const supertest = require('supertest');
-const { test } = require('node:test');
 const mockRequest = supertest(app);
 
 describe('API SERVER', () => {
