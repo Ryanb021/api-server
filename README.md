@@ -135,3 +135,10 @@ Your server must be deployed to the cloud. Please note the deployed URL in your 
 ## Assignment Submission Instructions
 
 Refer to the the [Submitting Express Server Lab Submission Instructions](../../../reference/submission-instructions/labs/express-servers.md) for the complete lab submission process and expectations
+
+## UML
+
+![Lab 3 UML](https://user-images.githubusercontent.com/120413183/230459677-2626da88-3a49-40cb-8357-b35d0dcedaec.png)
+
+
+
