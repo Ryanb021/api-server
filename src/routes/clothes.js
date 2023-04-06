@@ -2,7 +2,6 @@
 
 const express = require('express');
 const { clothesModel } = require('../models');
-
 const router = express.Router();
 
 router.get('/clothes', async (request, response, next) => {

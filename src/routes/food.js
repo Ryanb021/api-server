@@ -31,7 +31,7 @@ router.get('/food/:id', async (request, response, next) => {
 router.delete('/food/:id', async (request, response, next) => {
   try {
     const id = request.params.id;
-    await foodModel.delete(id);
+    await foodModel.destroy({where: { id: id}});
     response.status(200).send('Deleted');
   } catch(err) {
     next(err);
@@ -41,7 +41,7 @@ router.delete('/food/:id', async (request, response, next) => {
 router.put('/food/:id', async (request, response, next) => {
   try {
     const id = request.params.id;
-    await foodModel.update(request.body, id);
+    await foodModel.update(request.body, {where: { id: id}});
     response.status(200).send('Updated');
   } catch(err) {
     next(err);
