@@ -38,7 +38,7 @@ describe('server', () => {
     expect(response.body[0].id).toBeTruthy();
   });
 
-  it(`gets all clothes`, async () => {
+  it('gets all clothes', async () => {
     const response = await request.get('/clothes');
 
     expect(response.status).toEqual(200);

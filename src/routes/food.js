@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const { foodModel } = require('../models/food');
+const { foodModel } = require('../models/');
 const router = express.Router();
 
 router.get('/food', async (request, response, next) => {

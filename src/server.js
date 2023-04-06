@@ -11,7 +11,7 @@ const errorFiveHundred = require('./errorhandlers/500.js');
 const foodRouter = require('./routes/food.js');
 const clothesRouter = require('./routes/clothes.js');
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.json());
