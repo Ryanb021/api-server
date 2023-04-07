@@ -145,5 +145,3 @@ Refer to the the [Submitting Express Server Lab Submission Instructions](../../.
 - postgres://the_dark_knight_api_server_user:HP0mphYN7KVjk02d3UVgWq02c6dObJlR@dpg-cgngeq2ut4m1g7k7jf0g-a/the_dark_knight_api_server
 
 - https://dashboard.render.com/d/dpg-cgngeq2ut4m1g7k7jf0g-a
-
-- https://the-dark-knight-api-server.onrender.com
