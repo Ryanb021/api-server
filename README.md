@@ -140,5 +140,6 @@ Refer to the the [Submitting Express Server Lab Submission Instructions](../../.
 
 ![Lab 3 UML](https://user-images.githubusercontent.com/120413183/230459677-2626da88-3a49-40cb-8357-b35d0dcedaec.png)
 
+## Deployed Server Render
 
-
+- postgres://the_dark_knight_api_server_user:HP0mphYN7KVjk02d3UVgWq02c6dObJlR@dpg-cgngeq2ut4m1g7k7jf0g-a/the_dark_knight_api_server
