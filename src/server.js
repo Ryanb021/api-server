@@ -2,7 +2,6 @@
 
 const express = require('express');
 
-
 // 2 middlewares that perform specific server behaviors
 const logger = require('./middleware/logger.js');
 const validator =  require('./middleware/validator.js');
