@@ -2,7 +2,7 @@
 
 const validator = (request, response, next) => {
   if (!request.query.name) {
-    throw new Error('Name is required');
+    new Error('Name is required');
   } else {
     next();
   }
