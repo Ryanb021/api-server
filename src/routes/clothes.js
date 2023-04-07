@@ -1,17 +1,17 @@
 'use strict';
 
 const express = require('express');
-const { clothesModel } = require('../models');
+const { clothesCollection } = require('../models');
 const router = express.Router();
 
 router.get('/clothes', async (request, response, next) => {
-  const clothes = await clothesModel.findAll();
+  const clothes = await clothesCollection.read();
   response.status(200).send(clothes);
 });
 
 router.post('/clothes', async (request, response, next) => {
   try {
-    const newClothes = await clothesModel.create(request.body);
+    const newClothes = await clothesCollection.create(request.body);
     response.status(200).send(newClothes);
   } catch (err) {
     next(err);
@@ -21,7 +21,7 @@ router.post('/clothes', async (request, response, next) => {
 router.get('/clothes/:id', async (request, response, next) => {
   try {
     const id = request.params.id;
-    const clothes = await clothesModel.findById(id);
+    const clothes = await clothesCollection.read(id);
     response.status(200).send(clothes);
   } catch (err) {
     next(err);
@@ -31,7 +31,7 @@ router.get('/clothes/:id', async (request, response, next) => {
 router.delete('/clothes/:id', async (request, response, next) => {
   try {
     const id = request.params.id;
-    await clothesModel.destroy({where: { id: id}});
+    await clothesCollection.delete(id);
     response.status(200).send('Deleted');
   } catch(err) {
     next(err);
@@ -41,7 +41,7 @@ router.delete('/clothes/:id', async (request, response, next) => {
 router.put('/clothes/:id', async (request, response, next) => {
   try {
     const id = request.params.id;
-    await clothesModel.update(request.body, {where: { id: id}});
+    await clothesCollection.update(request.body, id);
     response.status(200).send('Updated');
   } catch(err) {
     next(err);
